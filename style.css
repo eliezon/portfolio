@@ -1092,7 +1092,7 @@ button {
     right: 0;
   }
   .vh {
-    height: 31vh;
+    height: 34vh;
     margin: 50px 0 0 -20px;
   }
   .hr div {
@@ -1128,6 +1128,9 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .education h2 {
+    margin-top: 40px;
   }
 
 }
@@ -1270,7 +1273,7 @@ button {
     padding-top: 110%;
   }
   .vh {
-    height: 37vh;
+    height: 35vh;
     margin: 50px 0 0 -12px;
   }
   .hr div {
@@ -1294,7 +1297,15 @@ button {
   textarea {
     height: 25vh;
   }
-
+  .slide {
+    width: 80%;
+  }
+  .education h2 {
+    margin-top: 50px;
+  }
+  .home-sci {
+    padding-left: 35px;
+  }
  
 
   
