@@ -493,7 +493,8 @@ section.show-animate .animate4 {
   width: 30%;
   transition: 1s;
   opacity: 1;
-  background-color: rgb(182, 65, 44);
+  background-color: rgb(78, 49, 148);
+  
   color: white;
   font-weight: lighter;
 }
@@ -501,7 +502,7 @@ section.show-animate .animate4 {
   width: 70%;
   transition: 1s;
   opacity: 1;
-  background-color: rgb(78, 49, 148);
+  background-color: rgb(165, 47, 27);
   color: white;
   font-weight: lighter;
 }
@@ -609,7 +610,16 @@ section.show-animate .animate4 {
 }
 
 /* -------- PROJECTS -------- */
-
+.graphics-design {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  transform: translateY(200px);
+  opacity: 0;
+}
+.graphics-design img {
+  width: 12%;
+}
 .projects h1 {
   font-size: 40px;
   color: white;
@@ -618,8 +628,11 @@ section.show-animate .animate4 {
 .projects span {
   color: #0ef;
 }
+.projects {
+  padding-top: 0;
+}
 .slideshow-container {
-  padding: 0;
+  padding: 100px 0 0 0;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -689,6 +702,14 @@ section.show-animate .animate4 {
   opacity: 1;
   transition: .7s ease;
 }
+.projects.show-animate .graphics-design{
+   transform: translateY(0);
+   transition: 0.5s ease;
+   opacity: 1;
+}
+video {
+  width: 100%;
+}
 
 
 /* -------- CONTACT -------- */
@@ -755,16 +776,20 @@ form input, textarea {
   border: 1px solid #0ef;
  
 }
-button {
+.btnc{
   padding: 10px;
   border-radius: 10px;
   border: none;
   background-color: #0ef;
   font-size: 20px;
   cursor: pointer;
+  text-align: center;
+  color: #081b29;
+  transition: 0.3s ease;
 }
-button:hover {
+.btnc:hover {
   background-color: rgb(255, 255, 255);
+  
 }
 .footer {
   height: 25vh;
@@ -1121,7 +1146,7 @@ button {
     padding: 10px ;
   }
   textarea {
-    height: 30vh;
+    height: 25vh;
   }
   form {
     display: flex;
