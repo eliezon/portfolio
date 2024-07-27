@@ -938,7 +938,7 @@ button {
     width: 100%;
   }
   .navBottom {
-    transform: translate(370px, -100px);
+    transform: translate(270px, -100px);
   }
   .navbar a {
     display: block;
