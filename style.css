@@ -233,7 +233,6 @@
   padding: 2px 15px;
   border-radius: 50px;
   border: 1px solid rgb(0, 238, 255);
-  transform: translate(80px, -40px);
   z-index: 10;
   transition: bottom 0.3s;
   box-shadow: 0 0 10px #0ef;
