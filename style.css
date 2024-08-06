@@ -1223,7 +1223,7 @@ button {
   }
   .navBottom {
     display: block;
-    transform: translate(80px, -10px);
+    transform: translate(40px, -100px);
   }
   .home-sci a {
     font-size: 15px;
