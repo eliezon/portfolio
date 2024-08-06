@@ -120,3 +120,31 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  let lastScrollTop = 0;
+  const arrow = document.querySelector('.arrow-up');
+
+  window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Downscroll
+      arrow.style.display = 'block';
+      arrow.transition= '0.3s ease-in-out';
+    } else {
+      // Upscroll
+      arrow.style.display = 'none';
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+  });
+});
+
+
+// Scroll to top smoothly
+document.querySelector('.arrow-up a').addEventListener('click', function (event) {
+  event.preventDefault();
+  document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
+});
