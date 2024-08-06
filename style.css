@@ -1195,7 +1195,7 @@ button {
     margin-top: 180px;
   }
   .navBottom {
-    transform: translate(75px, -130px);
+    transform: translate(75px, -10px);
   }
   .home-sci a {
     font-size: 15px;
